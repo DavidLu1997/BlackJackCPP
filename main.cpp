@@ -5,7 +5,6 @@
 using namespace std;
 
 void onePlayer();
-void twoPlayer();
 
 int softValue(vector<card> c);
 int hardValue(vector<card> c);
@@ -17,16 +16,12 @@ int main()
     while(choice != 0) {
         cout << "Welcome to BlackJack!" << endl;
         cout << "1. One Player" << endl;
-        cout << "2. Two Players" << endl;
         cout << "0. Exit" << endl;
         cin >> choice;
 
         switch(choice) {
         case 1:
             onePlayer();
-            break;
-        case 2:
-            twoPlayer();
             break;
         default:
             return 0;
@@ -162,8 +157,4 @@ int maxValue(vector<card> c) {
     }
 
     return value;
-}
-
-void twoPlayer() {
-
 }
