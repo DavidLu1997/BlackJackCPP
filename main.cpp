@@ -43,7 +43,7 @@ void onePlayer() {
 
     //Player's turn
     int choice = -1;
-    cout << "Your cards: ";
+    cout << "Your cards (value: " << maxValue(player) << "): ";
     for(int i = 0; i < player.size(); i++) {
         cout << player[i].toString() << " ";
     }
@@ -58,7 +58,7 @@ void onePlayer() {
         switch(choice) {
         case 1:
             player.push_back(d.draw());
-            cout << "Your cards: ";
+            cout << "Your cards (value: " << maxValue(player) << "): ";
             for(int i = 0; i < player.size(); i++) {
                 cout << player[i].toString() << " ";
             }
@@ -80,7 +80,7 @@ void onePlayer() {
     }
 
     else {
-        cout << "Dealer's cards: ";
+        cout << "Dealer's cards (value: " << maxValue(dealer) << "): ";
         for(int i = 0; i < dealer.size(); i++) {
             cout << dealer[i].toString() << " ";
         }
@@ -88,7 +88,7 @@ void onePlayer() {
         while(hardValue(dealer) < 17 || softValue(dealer) == 17) {
             cout << "The dealer draws another card." << endl;
             dealer.push_back(d.draw());
-            cout << "Dealer's cards: ";
+            cout << "Dealer's cards (value: " << maxValue(dealer) << "): ";
             for(int i = 0; i < dealer.size(); i++) {
                 cout << dealer[i].toString() << " ";
             }
