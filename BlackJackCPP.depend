@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1434159697 source:e:\onedrive\teaching\cpp\jan-june 2015\examples\blackjackcpp\main.cpp
+	<iostream>
+	"deck.h"
+	"card.h"
+	<cstdio>
+
+1434157896 e:\onedrive\teaching\cpp\jan-june 2015\examples\blackjackcpp\deck.h
+	"card.h"
+	<vector>
+	<cstdlib>
+	<ctime>
+
+1434158244 e:\onedrive\teaching\cpp\jan-june 2015\examples\blackjackcpp\card.h
+	<string>
+
